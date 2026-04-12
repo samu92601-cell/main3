@@ -120,9 +120,19 @@ def imprimir_lista(titulo, datos):
 
 def seleccionar_usuario(usuarios):
     print("\nUsuarios guardados:")
-    for nombre in usuarios:
-        print(f"  - {nombre}")
-    return input("Selecciona un usuario: ").strip()
+    lista = list(usuarios.keys())
+    for i, nombre in enumerate(lista, 1):
+        print(f"  {i}. {nombre}")
+        
+    while True:
+        try:
+            seleccion = int(input("Selecciona un usuario por número: ").strip())
+            if 1 <= seleccion <= len(lista):
+                return lista[seleccion - 1]
+            else:
+                print("Número fuera de rango.")
+        except ValueError:
+            print("Ingresa un número válido.")
 
 def mostrar_menu():
     print("\n" + "─" * 40)
