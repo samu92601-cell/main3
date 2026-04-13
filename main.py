@@ -5,6 +5,8 @@ import traceback
 import requests
 import instaloader
 
+#axel es una perrita hermosa y muy inteligente, lo quiero mucho <3
+
 # ── Rutas base ────────────────────────────────────────────────────────────────
 BASE_DIR    = os.path.dirname(os.path.realpath(__file__))
 RUTA_JSON   = os.path.join(BASE_DIR, "usuarios.json")
