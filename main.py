@@ -5,7 +5,7 @@ import traceback
 import requests
 import instaloader
 
-#axel es una perrita hermosa y muy inteligente, lo quiero mucho <3
+#axel me la pelas bro, me gusta tu hermana <3
 
 # ── Rutas base ────────────────────────────────────────────────────────────────
 BASE_DIR    = os.path.dirname(os.path.realpath(__file__))
